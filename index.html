@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nagendra B G | Portfolio Blog</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 0 1.5rem; }
+    header { max-width: 900px; margin: 0 auto; padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+    h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: #fff; }
+    .subtitle { color: var(--accent); font-weight: 500; margin-bottom: 1rem; }
+    nav a { color: var(--muted); text-decoration: none; margin-right: 1.2rem; font-size: 0.95rem; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+    main { max-width: 900px; margin: 2rem auto; }
+    section { margin-bottom: 3rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.4rem; color: #fff; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; transition: transform 0.2s, border-color 0.2s; }
+    .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .btn { display: inline-block; background-color: #0284c7; color: #fff; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 600; }
+    .btn:hover { background-color: var(--accent); color: #000; }
+    .tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .tag { background: #334155; color: #e2e8f0; padding: 0.3rem 0.8rem; border-radius: 9999px; font-size: 0.85rem; }
+    footer { max-width: 900px; margin: 4rem auto 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nagendra B G</h1>
+    <p class="subtitle">3rd Semester B.Tech CSIT Student at REVA University | Aspiring AI & Software Engineer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Artifacts</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a computer science undergraduate focused on core software engineering, systems design, and practical AI applications. I believe in documenting my technical milestones and actively building in public. Currently sharpening my problem-solving skills across algorithmic challenges and open-source contributions.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Artifacts & Projects</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Hello World Dev Environment</h3>
+          <p>Configured a cross-platform C/C++ build pipeline with MinGW-w64 and VS Code, incorporating structured Git versioning.</p>
+          <a href="https://github.com/Nagendrabg/hello-world" target="_blank" rel="noopener noreferrer" class="btn">View Repository</a>
+        </div>
+        <div class="card">
+          <h3>LeetCode Problem Solutions</h3>
+          <p>Organized solution repository documenting algorithmic patterns, local test coverage, and asymptotic complexity analysis.</p>
+          <a href="https://github.com/Nagendrabg/leetcode-solutions" target="_blank" rel="noopener noreferrer" class="btn">View Repository</a>
+        </div>
+        <div class="card">
+          <h3>Pair Programming Workflow</h3>
+          <p>Implemented modular workflows utilizing VS Code Live Share and GitLens for collaborative commits and team logging.</p>
+          <a href="https://github.com/Nagendrabg" target="_blank" rel="noopener noreferrer" class="btn">View Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="tags">
+        <span class="tag">C / C++</span>
+        <span class="tag">Python</span>
+        <span class="tag">Git & GitHub</span>
+        <span class="tag">VS Code & GitLens</span>
+        <span class="tag">Data Structures</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">HTML / CSS</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color: var(--muted); margin-bottom: 0.5rem;">Let's connect:</p>
+      <p>
+        <a href="https://github.com/Nagendrabg" target="_blank" rel="noopener noreferrer" style="color: var(--accent); margin-right: 1.5rem;">GitHub Profile</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent);">LinkedIn Profile</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nagendra B G. Built for Portfolio Building Course B25CS0311.</p>
+  </footer>
+</body>
+</html>
